@@ -67,7 +67,7 @@ export default async function BrowsePage({
         <div className="grid gap-6 xl:grid-cols-[280px_1fr]">
           <div className="space-y-4">
             <FilterDrawer />
-            <MapResultsPane services={browse.services} />
+
           </div>
           <div className="space-y-6">
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-[28px] border border-line bg-white/78 px-5 py-4">
@@ -81,6 +81,7 @@ export default async function BrowsePage({
               </div>
               <SortSelect />
             </div>
+            <MapResultsPane services={browse.services} />
             {browse.services.length ? (
               <div className="grid gap-5 md:grid-cols-2 2xl:grid-cols-3">
                 {browse.services.map((service) => (
