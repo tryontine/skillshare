@@ -17,13 +17,13 @@ export default function ProviderListingsPage() {
       <Card className="flex flex-wrap items-center justify-between gap-4 p-6">
         <div>
           <h1 className="font-display text-5xl">Listings</h1>
-          <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+          <p className="mt-4 text-sm leading-7 text-ink-soft">
             Edit premium cards, pricing, highlights, and booking modes from one surface.
           </p>
         </div>
         <Link
           href="/provider/listings/new"
-          className="rounded-full bg-[--color-alpine] px-5 py-3 text-sm font-semibold text-white"
+          className="rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
         >
           New listing
         </Link>

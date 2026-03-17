@@ -6,7 +6,7 @@ import { FormField } from "@/components/ui/form-field";
 export default function ResetPasswordPage() {
   return (
     <Card className="p-8">
-      <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">Choose a new password</p>
+      <p className="text-xs uppercase tracking-[0.24em] text-copper">Choose a new password</p>
       <h1 className="mt-4 font-display text-5xl">Set a fresh password</h1>
       <form className="mt-8 grid gap-4">
         <FormField label="New password">
@@ -17,7 +17,7 @@ export default function ResetPasswordPage() {
         </FormField>
         <Button type="submit">Update password</Button>
       </form>
-      <p className="mt-6 text-sm text-[--color-ink-soft]">
+      <p className="mt-6 text-sm text-ink-soft">
         <Link href="/auth/sign-in">Return to sign in</Link>
       </p>
     </Card>

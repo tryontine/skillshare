@@ -13,7 +13,7 @@ export default function ConsumerFavoritesPage() {
     >
       <Card className="p-6">
         <h1 className="font-display text-5xl">Favorites</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+        <p className="mt-4 text-sm leading-7 text-ink-soft">
           Save high-intent providers and revisit them later from a calm shortlist.
         </p>
       </Card>

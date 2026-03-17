@@ -57,7 +57,7 @@ export default async function SkillDetailPage({
             <div className="grid gap-4 md:grid-cols-3">
               {service.gallery.map((item) => (
                 <Card key={item} className="p-5">
-                  <p className="text-xs uppercase tracking-[0.22em] text-[--color-copper]">
+                  <p className="text-xs uppercase tracking-[0.22em] text-copper">
                     Gallery note
                   </p>
                   <h3 className="mt-3 font-display text-3xl">{item}</h3>
@@ -65,26 +65,26 @@ export default async function SkillDetailPage({
               ))}
             </div>
             <Card className="p-6">
-              <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+              <p className="text-xs uppercase tracking-[0.24em] text-copper">
                 Deliverables
               </p>
               <div className="mt-4 grid gap-3 md:grid-cols-3">
                 {service.deliverables.map((item) => (
-                  <div key={item} className="rounded-[20px] bg-[--color-surface] px-4 py-4 text-sm">
+                  <div key={item} className="rounded-[20px] bg-surface px-4 py-4 text-sm">
                     {item}
                   </div>
                 ))}
               </div>
             </Card>
             <Card className="p-6">
-              <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+              <p className="text-xs uppercase tracking-[0.24em] text-copper">
                 FAQs
               </p>
               <div className="mt-4 grid gap-4">
                 {service.faqs.map((faq) => (
-                  <div key={faq.question} className="rounded-[20px] bg-[--color-surface] px-4 py-4">
-                    <h3 className="font-semibold text-[--color-ink]">{faq.question}</h3>
-                    <p className="mt-2 text-sm leading-7 text-[--color-ink-soft]">
+                  <div key={faq.question} className="rounded-[20px] bg-surface px-4 py-4">
+                    <h3 className="font-semibold text-ink">{faq.question}</h3>
+                    <p className="mt-2 text-sm leading-7 text-ink-soft">
                       {faq.answer}
                     </p>
                   </div>
@@ -98,11 +98,11 @@ export default async function SkillDetailPage({
             {provider ? <ProviderMiniCard provider={provider} /> : null}
             <AvailabilityCalendar availability={service.availability} />
             <Card className="p-6">
-              <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+              <p className="text-xs uppercase tracking-[0.24em] text-copper">
                 Location
               </p>
               <h3 className="mt-3 font-display text-3xl">{service.location.venueLabel}</h3>
-              <p className="mt-3 text-sm leading-7 text-[--color-ink-soft]">
+              <p className="mt-3 text-sm leading-7 text-ink-soft">
                 {service.location.district}, {service.location.city}, {service.location.canton}. Service radius {service.location.radiusKm} km.
               </p>
             </Card>

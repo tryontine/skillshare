@@ -13,7 +13,7 @@ export default function ProviderInboxPage() {
     >
       <Card className="p-6">
         <h1 className="font-display text-5xl">Inbox</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+        <p className="mt-4 text-sm leading-7 text-ink-soft">
           Every thread is tied back to a service inquiry, booking request, or live booking.
         </p>
       </Card>

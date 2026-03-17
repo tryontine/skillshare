@@ -29,31 +29,31 @@ export default async function CheckoutPage({
         <div className="grid gap-6 xl:grid-cols-[1fr_420px]">
           <Card className="p-6">
             <h2 className="font-display text-4xl">Booking summary</h2>
-            <div className="mt-6 grid gap-4 text-sm text-[--color-ink-soft]">
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4">Provider: {booking.providerName}</div>
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4">Date: {booking.startsAt}</div>
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4">Location: {booking.locationLabel}</div>
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4">Mode: {booking.mode}</div>
+            <div className="mt-6 grid gap-4 text-sm text-ink-soft">
+              <div className="rounded-[20px] bg-surface px-4 py-4">Provider: {booking.providerName}</div>
+              <div className="rounded-[20px] bg-surface px-4 py-4">Date: {booking.startsAt}</div>
+              <div className="rounded-[20px] bg-surface px-4 py-4">Location: {booking.locationLabel}</div>
+              <div className="rounded-[20px] bg-surface px-4 py-4">Mode: {booking.mode}</div>
             </div>
           </Card>
           <Card className="p-6">
-            <p className="text-xs uppercase tracking-[0.22em] text-[--color-copper]">Price breakdown</p>
-            <div className="mt-4 grid gap-3 text-sm text-[--color-ink-soft]">
-              <div className="flex items-center justify-between rounded-[18px] bg-[--color-surface] px-4 py-4">
+            <p className="text-xs uppercase tracking-[0.22em] text-copper">Price breakdown</p>
+            <div className="mt-4 grid gap-3 text-sm text-ink-soft">
+              <div className="flex items-center justify-between rounded-[18px] bg-surface px-4 py-4">
                 <span>Service total</span>
                 <span><CurrencyText value={booking.totalChf} /></span>
               </div>
-              <div className="flex items-center justify-between rounded-[18px] bg-[--color-surface] px-4 py-4">
+              <div className="flex items-center justify-between rounded-[18px] bg-surface px-4 py-4">
                 <span>Platform fee</span>
                 <span><CurrencyText value={platformFee} /></span>
               </div>
-              <div className="flex items-center justify-between rounded-[18px] bg-[--color-surface] px-4 py-4 font-semibold text-[--color-ink]">
+              <div className="flex items-center justify-between rounded-[18px] bg-surface px-4 py-4 font-semibold text-ink">
                 <span>Charge amount</span>
                 <span><CurrencyText value={booking.totalChf + platformFee} /></span>
               </div>
             </div>
             <button
-              className="mt-6 w-full rounded-full bg-[--color-alpine] px-5 py-3 text-sm font-semibold text-white"
+              className="mt-6 w-full rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
               type="button"
             >
               Pay in CHF

@@ -18,11 +18,11 @@ export default function ProviderDashboardPage() {
   return (
     <DashboardShell title="Provider area" items={providerNavigation} activeHref="/provider">
       <Card className="p-6">
-        <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+        <p className="text-xs uppercase tracking-[0.24em] text-copper">
           {snapshot.heading}
         </p>
         <h1 className="mt-3 font-display text-5xl">Business control panel</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">{snapshot.subheading}</p>
+        <p className="mt-4 text-sm leading-7 text-ink-soft">{snapshot.subheading}</p>
       </Card>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {snapshot.metrics.map((metric) => (

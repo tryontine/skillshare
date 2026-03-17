@@ -18,19 +18,19 @@ export default function MessagesPage() {
         <div className="grid gap-6 xl:grid-cols-[0.85fr_1.15fr]">
           <InboxPreview threads={threads} />
           <Card className="p-6">
-            <p className="text-xs uppercase tracking-[0.22em] text-[--color-copper]">Thread states</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-copper">Thread states</p>
             <div className="mt-4 grid gap-3">
               {threads.map((thread) => (
                 <Link
                   key={thread.id}
                   href={`/messages/${thread.id}`}
-                  className="rounded-[20px] bg-[--color-surface] px-4 py-4"
+                  className="rounded-[20px] bg-surface px-4 py-4"
                 >
                   <div className="flex items-center justify-between gap-3">
-                    <p className="font-medium text-[--color-ink]">{thread.title}</p>
-                    <span className="text-xs text-[--color-ink-soft]">{thread.contextType}</span>
+                    <p className="font-medium text-ink">{thread.title}</p>
+                    <span className="text-xs text-ink-soft">{thread.contextType}</span>
                   </div>
-                  <p className="mt-2 text-sm text-[--color-ink-soft]">{thread.preview}</p>
+                  <p className="mt-2 text-sm text-ink-soft">{thread.preview}</p>
                 </Link>
               ))}
             </div>

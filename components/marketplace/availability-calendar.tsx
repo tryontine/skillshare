@@ -13,10 +13,10 @@ export function AvailabilityCalendar({
         {availability.map((rule) => (
           <div
             key={`${rule.day}-${rule.start}`}
-            className="flex items-center justify-between rounded-[18px] bg-[--color-surface] px-4 py-3 text-sm"
+            className="flex items-center justify-between rounded-[18px] bg-surface px-4 py-3 text-sm"
           >
             <span>{rule.day}</span>
-            <span className="text-[--color-ink-soft]">
+            <span className="text-ink-soft">
               {rule.start} - {rule.end}
             </span>
           </div>

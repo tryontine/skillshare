@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 export function CTASection() {
   return (
@@ -13,18 +14,23 @@ export function CTASection() {
           Start booking premium local expertise or launch your provider profile.
         </h2>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link href="/browse">
-            <Button className="bg-white text-[--color-alpine] hover:bg-white/90">
-              Explore services
-            </Button>
+          <Link
+            href="/browse"
+            className={cn(
+              buttonVariants(),
+              "border-white bg-white text-alpine hover:bg-white/90",
+            )}
+          >
+            Explore services
           </Link>
-          <Link href="/become-a-provider">
-            <Button
-              className="border-white/20 bg-white/10 text-white hover:bg-white/15"
-              variant="secondary"
-            >
-              Become a provider
-            </Button>
+          <Link
+            href="/become-a-provider"
+            className={cn(
+              buttonVariants({ variant: "secondary" }),
+              "border-white/20 bg-white/10 text-white hover:border-white/30 hover:bg-white/15 hover:text-white",
+            )}
+          >
+            Become a provider
           </Link>
         </div>
       </Card>

@@ -16,7 +16,7 @@ export function ProviderMiniCard({ provider }: { provider: ProviderDTO }) {
             <Link href={`/providers/${provider.handle}`} className="font-semibold">
               {provider.fullName}
             </Link>
-            <p className="text-sm text-[--color-ink-soft]">{provider.headline}</p>
+            <p className="text-sm text-ink-soft">{provider.headline}</p>
           </div>
           <RatingStars rating={provider.rating} />
           <div className="flex flex-wrap gap-2">

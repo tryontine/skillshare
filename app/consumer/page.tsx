@@ -16,11 +16,11 @@ export default function ConsumerDashboardPage() {
   return (
     <DashboardShell title="Consumer area" items={consumerNavigation} activeHref="/consumer">
       <Card className="p-6">
-        <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+        <p className="text-xs uppercase tracking-[0.24em] text-copper">
           {snapshot.heading}
         </p>
         <h1 className="mt-3 font-display text-5xl">Your Swiss service hub</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">{snapshot.subheading}</p>
+        <p className="mt-4 text-sm leading-7 text-ink-soft">{snapshot.subheading}</p>
       </Card>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {snapshot.metrics.map((metric) => (

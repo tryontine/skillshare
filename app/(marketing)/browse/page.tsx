@@ -52,11 +52,11 @@ export default async function BrowsePage({
       />
       <section className="page-frame pb-8">
         <SearchBar />
-        <div className="mt-4 flex flex-wrap gap-2 text-sm text-[--color-ink-soft]">
+        <div className="mt-4 flex flex-wrap gap-2 text-sm text-ink-soft">
           {popularSearches.map((term) => (
             <span
               key={term}
-              className="rounded-full border border-[--color-line] bg-white/70 px-3 py-2"
+              className="rounded-full border border-line bg-white/70 px-3 py-2"
             >
               {term}
             </span>
@@ -70,12 +70,12 @@ export default async function BrowsePage({
             <MapResultsPane services={browse.services} />
           </div>
           <div className="space-y-6">
-            <div className="flex flex-wrap items-center justify-between gap-3 rounded-[28px] border border-[--color-line] bg-white/78 px-5 py-4">
+            <div className="flex flex-wrap items-center justify-between gap-3 rounded-[28px] border border-line bg-white/78 px-5 py-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+                <p className="text-xs uppercase tracking-[0.24em] text-copper">
                   Live search snapshot
                 </p>
-                <p className="mt-2 text-sm text-[--color-ink-soft]">
+                <p className="mt-2 text-sm text-ink-soft">
                   {browse.total} results across {browse.cities.length} launch cities and {browse.categories.length} core categories.
                 </p>
               </div>

@@ -22,16 +22,16 @@ export default function CategoriesPage() {
               <Link
                 key={category.slug}
                 href={`/categories/${category.slug}`}
-                className="rounded-[30px] border border-[--color-line] bg-white/85 p-6 shadow-[0_20px_60px_rgba(36,31,28,0.08)] transition hover:-translate-y-1"
+                className="rounded-[30px] border border-line bg-white/85 p-6 shadow-[0_20px_60px_rgba(36,31,28,0.08)] transition hover:-translate-y-1"
               >
-                <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+                <p className="text-xs uppercase tracking-[0.24em] text-copper">
                   {count} live services
                 </p>
                 <h2 className="mt-3 font-display text-4xl">{category.name}</h2>
-                <p className="mt-3 text-sm leading-7 text-[--color-ink-soft]">
+                <p className="mt-3 text-sm leading-7 text-ink-soft">
                   {category.description}
                 </p>
-                <div className="mt-8 flex items-center justify-between text-sm font-medium text-[--color-ink]">
+                <div className="mt-8 flex items-center justify-between text-sm font-medium text-ink">
                   Explore category
                   <ArrowUpRight className="size-4" />
                 </div>

@@ -11,8 +11,8 @@ export function DashboardSidebar({
   activeHref: string;
 }) {
   return (
-    <aside className="rounded-[28px] border border-[--color-line] bg-white/78 p-4 shadow-[0_18px_50px_rgba(36,31,28,0.08)]">
-      <p className="px-3 pb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[--color-copper]">
+    <aside className="rounded-[28px] border border-line bg-white/78 p-4 shadow-[0_18px_50px_rgba(36,31,28,0.08)]">
+      <p className="px-3 pb-3 text-xs font-semibold uppercase tracking-[0.24em] text-copper">
         {title}
       </p>
       <nav className="grid gap-1">
@@ -23,8 +23,8 @@ export function DashboardSidebar({
             className={cn(
               "rounded-2xl px-3 py-3 text-sm transition",
               activeHref === item.href
-                ? "bg-[--color-alpine] text-white"
-                : "text-[--color-ink-soft] hover:bg-[--color-surface] hover:text-[--color-ink]",
+                ? "bg-alpine text-white"
+                : "text-ink-soft hover:bg-surface hover:text-ink",
             )}
           >
             {item.label}

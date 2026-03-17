@@ -13,7 +13,7 @@ export function InboxPreview({
     <Card className="p-5">
       <div className="flex items-center justify-between">
         <h3 className="font-display text-3xl">Inbox</h3>
-        <Link href={hrefPrefix} className="text-sm text-[--color-alpine]">
+        <Link href={hrefPrefix} className="text-sm text-alpine">
           Open all
         </Link>
       </div>
@@ -22,13 +22,13 @@ export function InboxPreview({
           <Link
             key={thread.id}
             href={`${hrefPrefix}/${thread.id}`.replace("/messages/messages", "/messages")}
-            className="rounded-[18px] bg-[--color-surface] px-4 py-4"
+            className="rounded-[18px] bg-surface px-4 py-4"
           >
             <div className="flex items-center justify-between gap-2">
               <p className="font-medium">{thread.title}</p>
-              <span className="text-xs text-[--color-ink-soft]">{thread.updatedAt}</span>
+              <span className="text-xs text-ink-soft">{thread.updatedAt}</span>
             </div>
-            <p className="mt-1 text-sm text-[--color-ink-soft]">{thread.preview}</p>
+            <p className="mt-1 text-sm text-ink-soft">{thread.preview}</p>
           </Link>
         ))}
       </div>

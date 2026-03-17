@@ -12,10 +12,10 @@ export function FormField({
   children: React.ReactNode;
 }) {
   return (
-    <label className={cn("grid gap-2 text-sm text-[--color-ink]", className)}>
+    <label className={cn("grid gap-2 text-sm text-ink", className)}>
       <span className="font-medium">{label}</span>
       {children}
-      {hint ? <span className="text-xs text-[--color-ink-soft]">{hint}</span> : null}
+      {hint ? <span className="text-xs text-ink-soft">{hint}</span> : null}
     </label>
   );
 }

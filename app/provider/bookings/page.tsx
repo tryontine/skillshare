@@ -13,7 +13,7 @@ export default function ProviderBookingsPage() {
     >
       <Card className="p-6">
         <h1 className="font-display text-5xl">Booking pipeline</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+        <p className="mt-4 text-sm leading-7 text-ink-soft">
           Request approvals, payment state, and completion events stay visible in one operational queue.
         </p>
       </Card>

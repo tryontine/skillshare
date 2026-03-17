@@ -35,15 +35,15 @@ export default async function ProviderDetailPage({
         <div className="grid gap-6 xl:grid-cols-[380px_1fr]">
           <Card className="p-6">
             <div className={`size-18 rounded-full bg-gradient-to-br ${provider.avatarGradient}`} />
-            <p className="mt-5 text-sm leading-7 text-[--color-ink-soft]">{provider.bio}</p>
+            <p className="mt-5 text-sm leading-7 text-ink-soft">{provider.bio}</p>
             <div className="mt-6 grid gap-3">
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4 text-sm">
+              <div className="rounded-[20px] bg-surface px-4 py-4 text-sm">
                 Languages: {provider.languages.join(", ")}
               </div>
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4 text-sm">
+              <div className="rounded-[20px] bg-surface px-4 py-4 text-sm">
                 Repeat client rate: {provider.repeatClientRate}%
               </div>
-              <div className="rounded-[20px] bg-[--color-surface] px-4 py-4 text-sm">
+              <div className="rounded-[20px] bg-surface px-4 py-4 text-sm">
                 Response time: {provider.responseTime}
               </div>
             </div>

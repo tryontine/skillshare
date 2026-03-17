@@ -36,7 +36,7 @@ export function ServiceCard({ service }: { service: ServiceCardDTO }) {
         </div>
       </div>
       <div className="space-y-4 p-5">
-        <p className="text-sm leading-6 text-[--color-ink-soft]">{service.summary}</p>
+        <p className="text-sm leading-6 text-ink-soft">{service.summary}</p>
         <div className="flex flex-wrap gap-2">
           {service.highlights.map((highlight) => (
             <Badge key={highlight}>{highlight}</Badge>
@@ -44,12 +44,12 @@ export function ServiceCard({ service }: { service: ServiceCardDTO }) {
         </div>
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-[--color-copper]">
+            <p className="text-xs uppercase tracking-[0.2em] text-copper">
               from
             </p>
-            <p className="text-lg font-semibold text-[--color-ink]">
+            <p className="text-lg font-semibold text-ink">
               <CurrencyText value={service.priceChf} />
-              <span className="text-sm font-normal text-[--color-ink-soft]">
+              <span className="text-sm font-normal text-ink-soft">
                 {" "}
                 / {service.durationLabel}
               </span>
@@ -59,7 +59,7 @@ export function ServiceCard({ service }: { service: ServiceCardDTO }) {
         </div>
         <Link
           href={`/skills/${service.slug}`}
-          className="flex items-center justify-between rounded-[20px] border border-[--color-line] bg-[--color-surface] px-4 py-3 text-sm font-medium text-[--color-ink]"
+          className="flex items-center justify-between rounded-[20px] border border-line bg-surface px-4 py-3 text-sm font-medium text-ink"
         >
           View service
           <ArrowUpRight className="size-4" />

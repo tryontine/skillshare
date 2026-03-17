@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #f5f0e8;
-  --color-surface: #ede4d8;
-  --color-line: rgba(41, 36, 31, 0.12);
-  --color-ink: #1f1b18;
-  --color-ink-soft: rgba(31, 27, 24, 0.72);
-  --color-alpine: #224f47;
-  --color-alpine-dark: #163c35;
-  --color-copper: #9b6a46;
+  --ui-bg: #f5f0e8;
+  --ui-surface: #ede4d8;
+  --ui-line: rgba(41, 36, 31, 0.12);
+  --ui-ink: #1f1b18;
+  --ui-ink-soft: rgba(31, 27, 24, 0.72);
+  --ui-alpine: #224f47;
+  --ui-alpine-dark: #163c35;
+  --ui-copper: #9b6a46;
   --grain:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.45), transparent 28%),
     radial-gradient(circle at 75% 0%, rgba(34, 79, 71, 0.08), transparent 30%),
@@ -16,14 +16,21 @@
 }
 
 @theme inline {
-  --color-background: var(--color-bg);
-  --color-foreground: var(--color-ink);
+  --color-background: var(--ui-bg);
+  --color-foreground: var(--ui-ink);
+  --color-surface: var(--ui-surface);
+  --color-line: var(--ui-line);
+  --color-ink: var(--ui-ink);
+  --color-ink-soft: var(--ui-ink-soft);
+  --color-alpine: var(--ui-alpine);
+  --color-alpine-dark: var(--ui-alpine-dark);
+  --color-copper: var(--ui-copper);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
 }
 
 * {
-  border-color: var(--color-line);
+  border-color: var(--ui-line);
 }
 
 html {
@@ -34,8 +41,8 @@ body {
   background:
     var(--grain),
     linear-gradient(180deg, rgba(255, 255, 255, 0.5), transparent 30%),
-    var(--color-bg);
-  color: var(--color-ink);
+    var(--ui-bg);
+  color: var(--ui-ink);
   font-family: var(--font-body), sans-serif;
 }
 
@@ -52,10 +59,10 @@ input,
 textarea,
 select {
   border-radius: 18px;
-  border: 1px solid var(--color-line);
+  border: 1px solid var(--ui-line);
   background: rgba(255, 255, 255, 0.82);
   padding: 0.85rem 1rem;
-  color: var(--color-ink);
+  color: var(--ui-ink);
 }
 
 ::selection {

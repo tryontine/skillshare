@@ -12,7 +12,7 @@ export default function ProviderListingNewPage() {
     >
       <Card className="p-6">
         <h1 className="font-display text-5xl">Create listing</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+        <p className="mt-4 text-sm leading-7 text-ink-soft">
           New services launch with in-person scope, Swiss location metadata, and hybrid booking options.
         </p>
       </Card>

@@ -21,22 +21,22 @@ export default function BecomeProviderPage() {
         <div className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-6">
             <Card className="p-6">
-              <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+              <p className="text-xs uppercase tracking-[0.24em] text-copper">
                 Why providers convert
               </p>
               <div className="mt-4 grid gap-3">
                 {launchBenefits.map((benefit) => (
-                  <div key={benefit} className="rounded-[20px] bg-[--color-surface] px-4 py-4 text-sm">
+                  <div key={benefit} className="rounded-[20px] bg-surface px-4 py-4 text-sm">
                     {benefit}
                   </div>
                 ))}
               </div>
             </Card>
             <Card className="p-6">
-              <p className="text-xs uppercase tracking-[0.24em] text-[--color-copper]">
+              <p className="text-xs uppercase tracking-[0.24em] text-copper">
                 Launch checklist
               </p>
-              <ol className="mt-4 grid gap-3 text-sm text-[--color-ink-soft]">
+              <ol className="mt-4 grid gap-3 text-sm text-ink-soft">
                 <li>1. Create an English-first profile with city, canton, and travel radius.</li>
                 <li>2. Connect Stripe Express and complete compliance checks.</li>
                 <li>3. Publish one premium listing with pricing, FAQ, and availability.</li>

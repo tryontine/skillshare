@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bodyFont.variable} ${displayFont.variable} min-h-screen bg-[--color-bg] antialiased`}
+        className={`${bodyFont.variable} ${displayFont.variable} min-h-screen bg-background antialiased`}
       >
         <Providers>{children}</Providers>
       </body>

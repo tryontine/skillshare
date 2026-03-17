@@ -33,16 +33,16 @@ export default async function ThreadDetailPage({
       <section className="page-frame pb-16">
         <div className="grid gap-6 xl:grid-cols-[320px_1fr]">
           <Card className="p-5">
-            <p className="text-xs uppercase tracking-[0.22em] text-[--color-copper]">All threads</p>
+            <p className="text-xs uppercase tracking-[0.22em] text-copper">All threads</p>
             <div className="mt-4 grid gap-3">
               {getThreads().map((item) => (
                 <Link
                   key={item.id}
                   href={`/messages/${item.id}`}
-                  className="rounded-[18px] bg-[--color-surface] px-4 py-4 text-sm"
+                  className="rounded-[18px] bg-surface px-4 py-4 text-sm"
                 >
-                  <p className="font-medium text-[--color-ink]">{item.title}</p>
-                  <p className="mt-1 text-[--color-ink-soft]">{item.preview}</p>
+                  <p className="font-medium text-ink">{item.title}</p>
+                  <p className="mt-1 text-ink-soft">{item.preview}</p>
                 </Link>
               ))}
             </div>
@@ -53,7 +53,7 @@ export default async function ThreadDetailPage({
                 {messages.map((message) => (
                   <div
                     key={message.id}
-                    className={message.mine ? "ml-auto max-w-xl rounded-[22px] bg-[--color-alpine] px-4 py-4 text-sm text-white" : "max-w-xl rounded-[22px] bg-white/82 px-4 py-4 text-sm text-[--color-ink]"}
+                    className={message.mine ? "ml-auto max-w-xl rounded-[22px] bg-alpine px-4 py-4 text-sm text-white" : "max-w-xl rounded-[22px] bg-white/82 px-4 py-4 text-sm text-ink"}
                   >
                     <p className="font-medium">{message.author}</p>
                     <p className="mt-2 leading-7">{message.body}</p>
@@ -68,7 +68,7 @@ export default async function ThreadDetailPage({
                   <textarea rows={4} placeholder="Send a reply tied to this booking or inquiry." />
                 </FormField>
                 <button
-                  className="rounded-full bg-[--color-alpine] px-5 py-3 text-sm font-semibold text-white"
+                  className="rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
                   type="submit"
                 >
                   Send message

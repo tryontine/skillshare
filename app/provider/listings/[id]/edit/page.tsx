@@ -25,7 +25,7 @@ export default async function ProviderListingEditPage({
     >
       <Card className="p-6">
         <h1 className="font-display text-5xl">Edit listing</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+        <p className="mt-4 text-sm leading-7 text-ink-soft">
           Updating {service.title} keeps marketing, booking, and pricing details aligned.
         </p>
       </Card>

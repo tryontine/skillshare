@@ -20,7 +20,7 @@ export default function SettingsNotificationsPage() {
         <h1 className="font-display text-5xl">Notifications</h1>
         <div className="mt-6 grid gap-3">
           {notificationItems.map((item) => (
-            <label key={item} className="flex items-center justify-between rounded-[20px] bg-[--color-surface] px-4 py-4 text-sm">
+            <label key={item} className="flex items-center justify-between rounded-[20px] bg-surface px-4 py-4 text-sm">
               {item}
               <input defaultChecked type="checkbox" />
             </label>

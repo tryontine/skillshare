@@ -15,7 +15,7 @@ export default function ProviderAvailabilityPage() {
     >
       <Card className="p-6">
         <h1 className="font-display text-5xl">Availability</h1>
-        <p className="mt-4 text-sm leading-7 text-[--color-ink-soft]">
+        <p className="mt-4 text-sm leading-7 text-ink-soft">
           Weekly rules and exceptions protect against double booking while staying simple to manage.
         </p>
       </Card>
