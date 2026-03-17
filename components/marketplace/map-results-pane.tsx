@@ -1,11 +1,14 @@
+import { useMemo } from "react";
 import { Card } from "@/components/ui/card";
 import type { ServiceCardDTO } from "@/types/dto";
 
 export function MapResultsPane({ services }: { services: ServiceCardDTO[] }) {
-  const byCity = services.reduce<Record<string, number>>((accumulator, service) => {
-    accumulator[service.city] = (accumulator[service.city] ?? 0) + 1;
-    return accumulator;
-  }, {});
+  const byCity = useMemo(() => {
+    return services.reduce<Record<string, number>>((accumulator, service) => {
+      accumulator[service.city] = (accumulator[service.city] ?? 0) + 1;
+      return accumulator;
+    }, {});
+  }, [services]);
 
   return (
     <Card className="overflow-hidden">
