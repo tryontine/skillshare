@@ -27,15 +27,17 @@ export function SearchBar({
         <input
           className="min-w-0 w-full border-none bg-transparent p-0 outline-none"
           placeholder="Find tutors, coaches, and creative pros"
+          aria-label="Search for services"
+          type="search"
         />
       </label>
-      <select defaultValue="all">
+      <select defaultValue="all" aria-label="Filter by category">
         <option value="all">All categories</option>
         <option value="language-coaching">Language coaching</option>
         <option value="tutoring">Tutoring</option>
         <option value="fitness">Fitness</option>
       </select>
-      <select defaultValue="Zurich">
+      <select defaultValue="Zurich" aria-label="Filter by city">
         {swissCities.map((city) => (
           <option key={city}>{city}</option>
         ))}
