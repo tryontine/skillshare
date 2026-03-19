@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FormField } from "@/components/ui/form-field";
 import { PageHero } from "@/components/ui/page-hero";
@@ -67,12 +68,9 @@ export default async function ThreadDetailPage({
                 <FormField label="Reply">
                   <textarea rows={4} placeholder="Send a reply tied to this booking or inquiry." />
                 </FormField>
-                <button
-                  className="rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
-                  type="submit"
-                >
+                <Button type="submit">
                   Send message
-                </button>
+                </Button>
               </form>
             </Card>
           </div>
