@@ -1,0 +1,3 @@
+## 2024-03-20 - Global Form Element Focus States
+**Learning:** Native input elements defined in the global stylesheet (`globals.css`) initially lacked any custom `:focus-visible` state, leading to inconsistent browser default outlines which could fail contrast checks against the UI background.
+**Action:** When working with design systems that define custom border/background styles for global elements like inputs and selects, always define explicit `:focus-visible` states using the system's primary interaction color (`--ui-alpine`) to ensure obvious keyboard navigation paths without relying on browser defaults.

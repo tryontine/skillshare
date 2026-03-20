@@ -63,6 +63,15 @@ select {
   background: rgba(255, 255, 255, 0.82);
   padding: 0.85rem 1rem;
   color: var(--ui-ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: var(--ui-alpine);
+  box-shadow: 0 0 0 3px rgba(34, 79, 71, 0.15);
 }
 
 ::selection {
