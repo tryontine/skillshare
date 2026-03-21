@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { FormField } from "@/components/ui/form-field";
 import { createListingAction } from "@/app/provider/listings/actions";
 
@@ -24,12 +25,9 @@ export function ListingEditor() {
           <input name="city" defaultValue="Zurich" required minLength={2} />
         </FormField>
       </div>
-      <button
-        className="rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
-        type="submit"
-      >
+      <Button type="submit">
         Save listing
-      </button>
+      </Button>
     </form>
   );
 }

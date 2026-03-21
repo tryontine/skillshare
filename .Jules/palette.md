@@ -1,0 +1,3 @@
+## 2024-03-21 - Standard Button Refactor
+**Learning:** Found several hardcoded standard `<button>` elements with repetitive `bg-alpine rounded-full` styling across the app. These lacked proper design system alignment, like hover transitions and consistent `:focus-visible` accessibility styles defined in the custom `Button` component.
+**Action:** Replaced these elements with the `@/components/ui/button` `Button` component to ensure consistent and accessible interaction patterns across all forms and card actions.
