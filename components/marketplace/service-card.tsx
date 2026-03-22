@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CurrencyText } from "@/components/ui/currency-text";
 import { RatingStars } from "@/components/ui/rating-stars";
@@ -16,13 +17,14 @@ export function ServiceCard({ service }: { service: ServiceCardDTO }) {
           <Badge className="border-white/20 bg-white/10 text-white">
             {service.city}
           </Badge>
-          <button
+          <Button
+            variant="ghost"
+            size="sm"
             aria-label={`Save ${service.title}`}
-            className="rounded-full border border-white/20 bg-white/10 p-2"
-            type="button"
+            className="h-auto rounded-full border border-white/20 bg-white/10 p-2 text-white hover:bg-white/20 hover:text-white"
           >
             <Heart className="size-4" />
-          </button>
+          </Button>
         </div>
         <div className="mt-10 flex items-end justify-between gap-3">
           <div>
