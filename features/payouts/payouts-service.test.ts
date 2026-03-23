@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { getPayoutHealth } from "./payouts-service.ts";
+import { getPayoutHealth } from "./payouts-service";
 
 describe("getPayoutHealth", () => {
   test("returns the expected snapshot structure", () => {
