@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { CurrencyText } from "@/components/ui/currency-text";
 import { RatingStars } from "@/components/ui/rating-stars";
+import { Button } from "@/components/ui/button";
 import type { ServiceCardDTO } from "@/types/dto";
 
 export function ServiceCard({ service }: { service: ServiceCardDTO }) {
@@ -16,13 +17,14 @@ export function ServiceCard({ service }: { service: ServiceCardDTO }) {
           <Badge className="border-white/20 bg-white/10 text-white">
             {service.city}
           </Badge>
-          <button
+          <Button
             aria-label={`Save ${service.title}`}
-            className="rounded-full border border-white/20 bg-white/10 p-2"
+            variant="ghost"
+            className="h-auto w-auto rounded-full border border-white/20 bg-white/10 p-2 text-white hover:bg-white/20 hover:text-white focus-visible:ring-white"
             type="button"
           >
             <Heart className="size-4" />
-          </button>
+          </Button>
         </div>
         <div className="mt-10 flex items-end justify-between gap-3">
           <div>
