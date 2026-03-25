@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { CurrencyText } from "@/components/ui/currency-text";
 import { PageHero } from "@/components/ui/page-hero";
+import { Button } from "@/components/ui/button";
 import { getBookingById } from "@/features/bookings/bookings-service";
 
 export default async function CheckoutPage({
@@ -52,12 +53,9 @@ export default async function CheckoutPage({
                 <span><CurrencyText value={booking.totalChf + platformFee} /></span>
               </div>
             </div>
-            <button
-              className="mt-6 w-full rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
-              type="button"
-            >
+            <Button className="mt-6 w-full" type="button">
               Pay in CHF
-            </button>
+            </Button>
           </Card>
         </div>
       </section>

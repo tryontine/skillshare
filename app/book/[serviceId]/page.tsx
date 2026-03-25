@@ -3,6 +3,7 @@ import { ServiceBookingPanel } from "@/components/marketplace/service-booking-pa
 import { Card } from "@/components/ui/card";
 import { FormField } from "@/components/ui/form-field";
 import { PageHero } from "@/components/ui/page-hero";
+import { Button } from "@/components/ui/button";
 import { getServiceById } from "@/features/services/service-service";
 
 export default async function BookServicePage({
@@ -37,12 +38,9 @@ export default async function BookServicePage({
               <FormField label="Notes" hint="Give the provider context before the thread opens.">
                 <textarea rows={6} placeholder="Goals, location preference, language, or access notes." />
               </FormField>
-              <button
-                className="rounded-full bg-alpine px-5 py-3 text-sm font-semibold text-white"
-                type="submit"
-              >
+              <Button type="submit">
                 Continue to checkout
-              </button>
+              </Button>
             </form>
           </Card>
           <ServiceBookingPanel service={service} />
