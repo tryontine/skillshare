@@ -1,3 +1,7 @@
 ## 2024-03-24 - Interactive Component Standardization
 **Learning:** Raw HTML interactive elements (like `<button>`) were being used alongside design system components (`<Button>`). This creates inconsistent focus-visible states and hover feedback, breaking the unified accessibility experience.
 **Action:** Always verify that interactive elements use the design system's primitive components (e.g., `@/components/ui/button`) instead of raw HTML elements to ensure consistent a11y states (like `focus-visible:ring-2`) and keyboard navigation support across the application.
+
+## 2024-03-27 - Form Input Focus Visible States
+**Learning:** Native `<input>`, `<textarea>`, and `<select>` elements had hardcoded base styles but lacked corresponding `:focus-visible` pseudo-class overrides in `globals.css`. This caused default browser focus outlines to inconsistently interact with the custom border styling, leading to a degraded keyboard navigation experience.
+**Action:** Always implement explicit `:focus-visible` styles with a unified design token (e.g., `--ui-alpine`) when styling native form inputs globally to guarantee a cohesive, accessible focus ring that seamlessly integrates with the application's theme variables.
