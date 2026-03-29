@@ -11,13 +11,13 @@ export default function SignUpPage() {
       <h1 className="mt-4 font-display text-5xl">Start on both sides of the marketplace</h1>
       <form action={signUpAction} className="mt-8 grid gap-4">
         <FormField label="Full name">
-          <input name="fullName" placeholder="Olivia Meyer" required />
+          <input className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" name="fullName" placeholder="Olivia Meyer" required />
         </FormField>
         <FormField label="Email address">
-          <input name="email" placeholder="you@example.com" type="email" required />
+          <input className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" name="email" placeholder="you@example.com" type="email" required />
         </FormField>
         <FormField label="Password" hint="At least 8 characters.">
-          <input name="password" type="password" required minLength={8} />
+          <input className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" name="password" type="password" required minLength={8} />
         </FormField>
         <Button type="submit">Create account</Button>
       </form>

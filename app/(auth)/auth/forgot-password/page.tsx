@@ -13,7 +13,7 @@ export default function ForgotPasswordPage() {
       </p>
       <form className="mt-8 grid gap-4">
         <FormField label="Email address">
-          <input type="email" />
+          <input className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" type="email" />
         </FormField>
         <Button type="submit">Send reset link</Button>
       </form>
