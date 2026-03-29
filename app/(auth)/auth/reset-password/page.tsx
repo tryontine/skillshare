@@ -10,10 +10,10 @@ export default function ResetPasswordPage() {
       <h1 className="mt-4 font-display text-5xl">Set a fresh password</h1>
       <form className="mt-8 grid gap-4">
         <FormField label="New password">
-          <input type="password" />
+          <input className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" type="password" />
         </FormField>
         <FormField label="Confirm password">
-          <input type="password" />
+          <input className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" type="password" />
         </FormField>
         <Button type="submit">Update password</Button>
       </form>
