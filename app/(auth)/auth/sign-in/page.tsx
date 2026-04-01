@@ -10,10 +10,10 @@ export default function SignInPage() {
       <p className="text-xs uppercase tracking-[0.24em] text-copper">Sign in</p>
       <h1 className="mt-4 font-display text-5xl">Welcome back</h1>
       <form action={signInAction} className="mt-8 grid gap-4">
-        <FormField label="Email address">
+        <FormField label="Email address" required>
           <input name="email" defaultValue="olivia@skillshare.ch" type="email" required />
         </FormField>
-        <FormField label="Password">
+        <FormField label="Password" required>
           <input name="password" defaultValue="password123" type="password" required />
         </FormField>
         <Button type="submit">Sign in</Button>
