@@ -1,0 +1,12 @@
+
+> skillshare-switzerland@0.1.0 dev /app
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+✓ Ready in 1182ms
+ GET /skills 404 in 2.3s (compile: 1778ms, render: 512ms)
+ GET / 200 in 2.0s (compile: 945ms, render: 1062ms)
