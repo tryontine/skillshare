@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import * as assert from 'node:assert';
-import { getPopularSearches } from './search-service';
+import { getPopularSearches } from './search-service.ts';
 
 describe('search-service', () => {
   describe('getPopularSearches', () => {
