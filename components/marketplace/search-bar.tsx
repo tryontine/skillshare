@@ -19,7 +19,7 @@ export function SearchBar({
     >
       <label
         className={cn(
-          "flex min-w-0 items-center gap-3 rounded-[18px] bg-surface px-4 py-3",
+          "flex min-w-0 items-center gap-3 rounded-[18px] bg-surface px-4 py-3 transition duration-300 focus-within:outline-none focus-within:ring-2 focus-within:ring-alpine",
           compact && "md:col-span-2",
         )}
       >
