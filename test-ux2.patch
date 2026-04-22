@@ -1,0 +1,15 @@
+--- app/globals.css
++++ app/globals.css
+@@ -51,6 +51,11 @@
+   color: var(--ui-ink);
+ }
+
++input:focus-visible,
++textarea:focus-visible,
++select:focus-visible {
++  outline: 2px solid var(--ui-alpine);
++}
++
+ ::selection {
+   background: rgba(34, 79, 71, 0.18);
+ }
