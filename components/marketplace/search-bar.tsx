@@ -19,11 +19,11 @@ export function SearchBar({
     >
       <label
         className={cn(
-          "flex min-w-0 items-center gap-3 rounded-[18px] bg-surface px-4 py-3",
+          "group flex min-w-0 items-center gap-3 rounded-[18px] bg-surface px-4 py-3 focus-within:outline-none focus-within:ring-2 focus-within:ring-alpine",
           compact && "md:col-span-2",
         )}
       >
-        <Search className="size-4 shrink-0 text-ink-soft" />
+        <Search className="size-4 shrink-0 text-ink-soft group-focus-within:text-alpine" />
         <input
           className="min-w-0 w-full border-none bg-transparent p-0 outline-none"
           placeholder="Find tutors, coaches, and creative pros"
