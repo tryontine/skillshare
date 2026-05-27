@@ -6,7 +6,7 @@ export function ListingEditor() {
   return (
     <form action={createListingAction} className="grid gap-4 rounded-[28px] border border-line bg-white/85 p-6">
       <FormField label="Listing title">
-        <input name="title" defaultValue="Swiss German conversation walks in Zurich" required minLength={8} />
+        <input name="title" defaultValue="Swiss German conversation walks in Zurich" required minLength={8} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" />
       </FormField>
       <FormField label="Summary">
         <textarea
@@ -15,14 +15,15 @@ export function ListingEditor() {
           rows={4}
           required
           minLength={24}
+          className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine"
         />
       </FormField>
       <div className="grid gap-4 sm:grid-cols-2">
         <FormField label="Price (CHF)">
-          <input name="priceChf" defaultValue="95" type="number" required min={40} />
+          <input name="priceChf" defaultValue="95" type="number" required min={40} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" />
         </FormField>
         <FormField label="City">
-          <input name="city" defaultValue="Zurich" required minLength={2} />
+          <input name="city" defaultValue="Zurich" required minLength={2} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" />
         </FormField>
       </div>
       <Button type="submit" className="w-full sm:w-auto">
