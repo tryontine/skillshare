@@ -1,3 +1,6 @@
 ## 2024-03-24 - Interactive Component Standardization
 **Learning:** Raw HTML interactive elements (like `<button>`) were being used alongside design system components (`<Button>`). This creates inconsistent focus-visible states and hover feedback, breaking the unified accessibility experience.
 **Action:** Always verify that interactive elements use the design system's primitive components (e.g., `@/components/ui/button`) instead of raw HTML elements to ensure consistent a11y states (like `focus-visible:ring-2`) and keyboard navigation support across the application.
+## 2024-05-18 - Header Search Accessibility
+**Learning:** Found a custom search trigger (`CommandSearch` in `MarketingHeader`/`MarketplaceHeader`) built using a `<div>` instead of a `<button>`. This meant keyboard users couldn't tab to it, effectively hiding a primary navigation action.
+**Action:** When auditing custom UI elements designed to look like inputs or triggers, always check the underlying HTML tag. Use native `<button>` elements with `type="button"` for interactive triggers to get free keyboard focusability, and add `aria-label` when the text content isn't fully descriptive (e.g., when it has keyboard hint spans).
