@@ -1,7 +1,7 @@
 import { test, describe } from "node:test";
 import assert from "node:assert";
-import { canManageProviderArea } from "./permissions.ts";
-import type { AppRole } from "../types/app.ts";
+import { canManageProviderArea } from "./permissions.js";
+import type { AppRole } from "../types/app.js";
 
 describe("canManageProviderArea", () => {
   test("should return true when user has 'provider' role", () => {
