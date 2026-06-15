@@ -19,25 +19,25 @@ export function SearchBar({
     >
       <label
         className={cn(
-          "flex min-w-0 items-center gap-3 rounded-[18px] bg-surface px-4 py-3",
+          "flex min-w-0 items-center gap-3 rounded-[18px] bg-surface px-4 py-3 focus-within:outline-none focus-within:ring-2 focus-within:ring-alpine",
           compact && "md:col-span-2",
         )}
       >
         <Search className="size-4 shrink-0 text-ink-soft" />
         <input
-          className="min-w-0 w-full border-none bg-transparent p-0 outline-none"
+          className="min-w-0 w-full border-none bg-transparent p-0 outline-none focus:outline-none"
           placeholder="Find tutors, coaches, and creative pros"
           aria-label="Search for services"
           type="search"
         />
       </label>
-      <select defaultValue="all" aria-label="Filter by category">
+      <select className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" defaultValue="all" aria-label="Filter by category">
         <option value="all">All categories</option>
         <option value="language-coaching">Language coaching</option>
         <option value="tutoring">Tutoring</option>
         <option value="fitness">Fitness</option>
       </select>
-      <select defaultValue="Zurich" aria-label="Filter by city">
+      <select className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine" defaultValue="Zurich" aria-label="Filter by city">
         {swissCities.map((city) => (
           <option key={city}>{city}</option>
         ))}
