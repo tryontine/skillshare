@@ -11,7 +11,7 @@ export function FilterDrawer() {
       <div className="mt-4 grid gap-3 text-sm">
         <label className="grid gap-2">
           Rating
-          <select defaultValue="4.5+">
+          <select defaultValue="4.5+" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine">
             <option>4.5+</option>
             <option>4.0+</option>
             <option>Any</option>
@@ -19,7 +19,7 @@ export function FilterDrawer() {
         </label>
         <label className="grid gap-2">
           Price cap
-          <select defaultValue="CHF 200">
+          <select defaultValue="CHF 200" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine">
             <option>CHF 120</option>
             <option>CHF 200</option>
             <option>CHF 500</option>
@@ -27,7 +27,7 @@ export function FilterDrawer() {
         </label>
         <label className="grid gap-2">
           Booking mode
-          <select defaultValue="All">
+          <select defaultValue="All" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine">
             <option>All</option>
             <option>Instant</option>
             <option>Request</option>
