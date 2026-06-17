@@ -1,3 +1,7 @@
 ## 2024-03-24 - Interactive Component Standardization
 **Learning:** Raw HTML interactive elements (like `<button>`) were being used alongside design system components (`<Button>`). This creates inconsistent focus-visible states and hover feedback, breaking the unified accessibility experience.
 **Action:** Always verify that interactive elements use the design system's primitive components (e.g., `@/components/ui/button`) instead of raw HTML elements to ensure consistent a11y states (like `focus-visible:ring-2`) and keyboard navigation support across the application.
+
+## 2024-06-18 - Custom Input Wrapper Focus Rings
+**Learning:** When building custom input components that use a wrapper element (like a `<label>`) for styling and apply `outline-none` to the inner native `<input>`, the default keyboard focus visibility is lost. This creates an accessibility barrier for users navigating via keyboard.
+**Action:** When a custom input design requires hiding the native focus ring (`outline-none`), always apply `focus-within:ring-2 focus-within:ring-alpine focus-within:outline-none transition-shadow` to the parent wrapper to maintain clear, WCAG-compliant keyboard focus visibility. Additionally, ensure adjacent native interactive elements like `<select>` dropdowns share the exact same focus styling (`focus-visible:ring-2 focus-visible:ring-alpine focus-visible:outline-none`) for a cohesive and predictable user experience across the application.
