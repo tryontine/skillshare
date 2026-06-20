@@ -1,3 +1,6 @@
 ## 2024-03-24 - Interactive Component Standardization
 **Learning:** Raw HTML interactive elements (like `<button>`) were being used alongside design system components (`<Button>`). This creates inconsistent focus-visible states and hover feedback, breaking the unified accessibility experience.
 **Action:** Always verify that interactive elements use the design system's primitive components (e.g., `@/components/ui/button`) instead of raw HTML elements to ensure consistent a11y states (like `focus-visible:ring-2`) and keyboard navigation support across the application.
+## 2026-06-20 - Custom Input Accessibility
+**Learning:** When building custom inputs that use `outline-none` on the inner `<input>`, the parent container loses default browser focus styling, leaving keyboard users without visual focus indicators. Additionally, adjacent native elements like `<select>` may have inconsistent focus styles if not explicitly matched.
+**Action:** Apply `focus-within:outline-none focus-within:ring-2 focus-within:ring-alpine` to the parent container of `outline-none` inputs, and apply corresponding `focus-visible:ring-*` utility classes to adjacent native interactive elements to maintain WCAG-compliant keyboard focus visibility.
