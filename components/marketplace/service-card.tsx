@@ -61,7 +61,7 @@ export function ServiceCard({ service }: { service: ServiceCardDTO }) {
         </div>
         <Link
           href={`/skills/${service.slug}`}
-          className="flex items-center justify-between rounded-[20px] border border-line bg-surface px-4 py-3 text-sm font-medium text-ink"
+          className="flex items-center justify-between rounded-[20px] border border-line bg-surface px-4 py-3 text-sm font-medium text-ink transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine"
         >
           View service
           <ArrowUpRight className="size-4" />
