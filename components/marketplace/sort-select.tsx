@@ -1,6 +1,6 @@
 export function SortSelect() {
   return (
-    <select defaultValue="recommended" className="min-w-44">
+    <select defaultValue="recommended" className="min-w-44 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine">
       <option value="recommended">Recommended</option>
       <option value="rating">Highest rated</option>
       <option value="price_low">Price: low to high</option>
