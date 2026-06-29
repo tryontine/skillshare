@@ -2,12 +2,19 @@ import { Search } from "lucide-react";
 
 export function CommandSearch() {
   return (
-    <div className="hidden flex-1 items-center gap-3 rounded-full border border-line bg-white/70 px-4 py-3 text-sm text-ink-soft lg:flex">
-      <Search className="size-4" />
+    <button
+      type="button"
+      aria-label="Search"
+      className="hidden flex-1 cursor-pointer items-center gap-3 rounded-full border border-line bg-white/70 px-4 py-3 text-sm text-ink-soft transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alpine lg:flex"
+    >
+      <Search className="size-4" aria-hidden="true" />
       Search skills, cities, providers, or categories
-      <span className="ml-auto rounded-full border border-line px-2 py-1 text-[10px] uppercase tracking-[0.2em]">
+      <span
+        className="ml-auto rounded-full border border-line px-2 py-1 text-[10px] uppercase tracking-[0.2em]"
+        aria-hidden="true"
+      >
         /
       </span>
-    </div>
+    </button>
   );
 }
